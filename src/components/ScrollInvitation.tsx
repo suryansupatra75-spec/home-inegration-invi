@@ -80,10 +80,10 @@ export default function ScrollInvitation() {
             animate={isOpen ? "open" : "closed"}
             className="w-full max-w-[526px] overflow-hidden z-10 mx-auto origin-top relative shadow-2xl"
           >
-            <div className="parchment-bg text-maroon border-x-[12px] border-double border-gold/40 px-6 sm:px-12 py-10 flex flex-col items-center text-center relative">
+            <div className="parchment-bg text-maroon border-x-8 sm:border-x-[12px] border-double border-gold/40 px-4 sm:px-12 py-8 sm:py-10 flex flex-col items-center text-center relative">
               {/* Inner Decorative Borders */}
-              <div className="absolute inset-4 border border-gold/25 pointer-events-none" />
-              <div className="absolute inset-[18px] border-2 border-double border-gold/15 pointer-events-none" />
+              <div className="absolute inset-2 sm:inset-4 border border-gold/25 pointer-events-none" />
+              <div className="absolute inset-[10px] sm:inset-[18px] border-2 border-double border-gold/15 pointer-events-none" />
 
               {/* Shloka Emblem */}
               <div className="text-gold text-2xl mb-2 z-10">۩</div>

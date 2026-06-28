@@ -101,7 +101,7 @@ export default function CeremonyTimeline() {
             whileInView={{ scaleY: 1 }}
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 1.8, ease: "easeOut" }}
-            className="absolute top-0 bottom-0 left-[28px] md:left-1/2 w-0.5 bg-gradient-to-b from-gold-light via-gold to-gold-dark/20 transform -translate-x-1/2 origin-top pointer-events-none"
+            className="absolute top-0 bottom-0 left-[18px] md:left-1/2 w-0.5 bg-gradient-to-b from-gold-light via-gold to-gold-dark/20 transform -translate-x-1/2 origin-top pointer-events-none"
           />
 
           {events.map((event, index) => {
@@ -119,7 +119,7 @@ export default function CeremonyTimeline() {
                   whileInView={{ scale: 1, rotate: 0 }}
                   viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
-                  className="absolute left-[28px] md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-maroon border-2 border-gold flex items-center justify-center z-20 shadow-[0_0_12px_rgba(200,155,60,0.4)] group-hover:scale-110 transition-transform duration-300"
+                  className="absolute left-[18px] md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-maroon border-2 border-gold flex items-center justify-center z-20 shadow-[0_0_12px_rgba(200,155,60,0.4)] group-hover:scale-110 transition-transform duration-300"
                 >
                   <motion.div
                     initial={{ scale: 0 }}
@@ -131,11 +131,11 @@ export default function CeremonyTimeline() {
                 </motion.div>
 
                 {/* Event Card Wrapper */}
-                <div className={`w-full md:w-[45%] pl-16 md:pl-0 ${isLeft ? "md:text-right" : "md:order-last md:text-left"}`}>
+                <div className={`w-full md:w-[45%] pl-10 md:pl-0 ${isLeft ? "md:text-right" : "md:order-last md:text-left"}`}>
                   <motion.div
                     variants={cardVariants}
                     viewport={{ once: true }}
-                    className="p-6 rounded-lg glass-dark border border-gold/20 bg-maroon-deep/40 shadow-xl relative hover:border-gold/50 transition-all duration-300 group-hover:shadow-[0_10px_30px_rgba(122,31,31,0.2)]"
+                    className="p-4 sm:p-6 rounded-lg glass-dark border border-gold/20 bg-maroon-deep/40 shadow-xl relative hover:border-gold/50 transition-all duration-300 group-hover:shadow-[0_10px_30px_rgba(122,31,31,0.2)]"
                   >
                     {/* Time Label (Floating) */}
                     <div className={`inline-block px-3 py-1 bg-maroon-light border border-gold/30 rounded-full text-xs font-semibold font-body tracking-wider text-gold-light mb-3`}>

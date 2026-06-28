@@ -64,7 +64,7 @@ export default function RSVPForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-full rounded-lg border-2 border-gold/30 bg-[#fffdfa] p-8 sm:p-10 shadow-2xl relative"
+          className="w-full rounded-lg border-2 border-gold/30 bg-[#fffdfa] p-4 sm:p-10 shadow-2xl relative"
         >
           {/* Double inner border lines */}
           <div className="absolute inset-2.5 border border-gold/15 rounded-md pointer-events-none" />
